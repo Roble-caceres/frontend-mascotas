@@ -20,6 +20,9 @@ function MiLogin() {
       className="login"
       onSubmit={(evento) => {
         evento.preventDefault();
+
+        console.log("usuario:", usuario);
+        console.log("password:", password);
          
         // Peticion POST para hacer login
         fetch("https://backend-mascotas-5e20.onrender.com/login", {
