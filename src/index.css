@@ -68,6 +68,7 @@ select:focus {
 .app {
   display: flex;
   min-height: 100vh;
+  max-width: 100%;
 }
 .contenido {
   flex: 1;
@@ -75,6 +76,7 @@ select:focus {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
 }
 
 /* CONTENEDOR PRINCIPAL */
@@ -422,6 +424,7 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 /* MODAL */
@@ -492,6 +495,7 @@ select:focus {
   .barra-lateral {
     padding: 15px;
     gap: 15px;
+    width: 100%;
   }
 
   .menu {
@@ -530,6 +534,12 @@ select:focus {
 
   .lista-mascotas {
     grid-template-columns: 1fr;
+  }
+  .app{
+    flex-direction: column;
+  }
+  .contenido{
+    width: 100%;
   }
 }
 
