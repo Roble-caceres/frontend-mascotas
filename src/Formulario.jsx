@@ -25,7 +25,7 @@ function Formulario({ crearMascota }) {
         if (!nombre || !tipo || !edad) return;
 
         // Peticion POST  para crear una nueva mascota 
-        fetch("http://localhost:3000/nuevo", {
+        fetch("https://backend-mascotas-5e20.onrender.com", {
           method: "POST",
           body: JSON.stringify({
             nombre,

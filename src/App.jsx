@@ -22,7 +22,7 @@ function App() {
     if (!token) return;
 
     // Petición GET al backend para obtener las mascotas
-    fetch("http://localhost:3000/mascotas", {
+    fetch("https://backend-mascotas-5e20.onrender.com", {
       headers: {
         Authorization: "Bearer " + token,
       },
@@ -37,7 +37,7 @@ function App() {
   }
   // Borra una mascota por id
   function borrarMascota(id) {
-    fetch("http://localhost:3000/borrar/" + id, {
+    fetch("https://backend-mascotas-5e20.onrender.com" + id, {
       method: "DELETE",
       headers: {
         Authorization: "Bearer " + token,
@@ -49,7 +49,7 @@ function App() {
   }
   // Actualiza los datos de una mascota
   function actualizarMascota(id, objMascota) {
-    fetch("http://localhost:3000/actualizar/" + id, {
+    fetch("https://backend-mascotas-5e20.onrender.com" + id, {
       method: "PATCH",
       body: JSON.stringify(objMascota),
       headers: {
