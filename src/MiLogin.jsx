@@ -22,7 +22,7 @@ function MiLogin() {
         evento.preventDefault();
          
         // Peticion POST para hacer login
-        fetch("https://backend-mascotas-5e20.onrender.com", {
+        fetch("https://backend-mascotas-5e20.onrender.com/login", {
           method: "POST",
           body: JSON.stringify({ usuario, password }),
           headers: {
