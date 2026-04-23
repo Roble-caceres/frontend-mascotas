@@ -466,6 +466,10 @@ select:focus {
 
   /* FORMULARIO */
 
+  .form-mascota{
+    grid-template-columns: 1fr;
+  }
+
   .form-mascota button {
     grid-column: span 1;
   }
@@ -565,14 +569,5 @@ select:focus {
 
   .servicios {
     grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 400px) {
-  .form-mascota {
-    grid-template-columns: 1fr;
-  }
-
-  .form-mascota button {
-    grid-column: span 1;
   }
 }
